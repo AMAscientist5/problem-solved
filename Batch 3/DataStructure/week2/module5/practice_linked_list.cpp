@@ -32,17 +32,17 @@ Node* tmp = head;
 
 while(tmp != NULL)
 {
-    cout<<tmp->val<<endl;
-    tmp = tmp->next;
-}
+    cout<<tmp->val<<endl;   // head not null 10
+    tmp = tmp->next;        // a    not null 20
+}                           // b  not null 30
+                            // c  not null 40
+// Node* tmps = head;       // d not null 50  
 
-Node* tmps = head;
-
-while(tmps != NULL)
-{
-    cout<<tmps->val<<endl;
-    tmps = tmps->next;
-}
+// while(tmps != NULL)
+// {
+//     cout<<tmps->val<<endl;
+//     tmps = tmps->next;
+// }
 
 // second step
 //  Node a(10);

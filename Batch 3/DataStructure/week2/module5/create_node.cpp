@@ -11,17 +11,32 @@ class Node{
 
 int main()
 {
-  Node a,b;
+  Node a,b,c;
 
   a.val=10;
   b.val=20;
+  c.val=30;
 
   a.next=&b;
-  b.next=NULL;
+  b.next=&c;
+  c.next=NULL;
 
-  cout<<a.val<<endl;
-  cout<<b.val<<endl;
-  cout<<(*a.next).val<<endl;
-  cout<<a.next->val<<endl;
+  // cout<<a.val<<endl;
+  // cout<<b.val<<endl;
+  // cout<<(*a.next).val<<endl;
+  // cout<<a.next->next<<endl;
+  // cout<<&b<<endl;
+  // cout<<&c<<endl;
+  // cout<<a.val<<endl;
+   cout<<a.val<<endl;
+   cout<<a.next<<endl;
+   cout<<&b<<endl;
+   cout<<a.next->val<<endl;
+   cout<<a.next->next<<endl;
+   cout<<&c<<endl;
+   cout<<a.next->next->val<<endl;
+   cout<<a.next->next->next<<endl;
+   cout<<&c<<endl;
+
     return 0;
 }

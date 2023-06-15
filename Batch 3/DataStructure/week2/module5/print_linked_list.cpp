@@ -44,12 +44,12 @@ int main()
     tmp = tmp->next;
    }
 
-  Node* tmp = head;
+  // Node* tmp = head;
 
-  while(tmp != NULL){
-    cout<<tmp->val<<endl;
-    tmp = tmp->next;
-   }
+  // while(tmp != NULL){
+  //   cout<<tmp->val<<endl;
+  //   tmp = tmp->next;
+  //  }
 
 
     return 0;

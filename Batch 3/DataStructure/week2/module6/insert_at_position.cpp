@@ -42,11 +42,11 @@ void insert_at_position(Node* head, int pos, int v){
     Node* newNode = new Node(v);
 
    Node* tmp = head;
-    for(int i=1; i<pos-1;i++){
+    for(int i=1; i<=pos-1;i++){
        tmp = tmp->next;
     }
     newNode->next = tmp->next;
-    tmp->next = newNode;
+    tmp->next = newNode; 
 
     cout<<endl<<endl<<"Inserted at position "<<pos<<endl<<endl;
     
@@ -58,8 +58,8 @@ int main()
   while(true){
     cout<<"Enter Option 1: to insert at tail"<<endl;
     cout<<"Enter Option 2: to print linked List"<<endl;
-    cout<<"Enter Option 1: to insert at position"<<endl;
-    cout<<"Enter Option 1: to terminate"<<endl;
+    cout<<"Enter Option 3: to insert at position"<<endl;
+    cout<<"Enter Option 4: to terminate"<<endl;
     int op;
     cin>>op;
 

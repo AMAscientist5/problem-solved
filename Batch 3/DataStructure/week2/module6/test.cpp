@@ -72,13 +72,6 @@ void print_linked_list(Node *head){
 }
 
 
-
-
-
-
-
-
-
 int main()
 {
     Node *head = NULL;
